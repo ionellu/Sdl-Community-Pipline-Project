@@ -8,7 +8,7 @@ resources:
   - repository: MyRepo
     type: github
     name: ionellu/Sdl-Community
-    endpoint: https://dev.azure.com/{organization}/{project}/adminservices
+    endpoint: https://dev.azure.com/{sdl}/{Itdevops}/
     
 trigger:
   branches:
