@@ -4,7 +4,13 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
 
 
-    
+resources:
+  repositories:
+  - repository: MyRepo  # identifier (A-Z, a-z, 0-9, and underscore)
+    type: github  # see the following "Type" topic
+    name: ionellu  # repository name (format depends on `type`)
+    ref: ionellu/Sdl-Community/ # ref name to use; defaults to 'refs/heads/master'
+    endpoint: ionellu  # name of the service connection to use (for types that aren't Azure Repos)
 trigger:
   branches:
     include:
@@ -21,5 +27,5 @@ variables:
   solution : '**/Sdl.Community.AdvancedDisplayFilter.sln'
   
 steps:
-  - checkout: ionellu/Sdl-Community
+  - checkout: MyRepo
   - template: include-buid-steps.yml  # Template reference
