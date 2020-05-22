@@ -8,12 +8,12 @@ resources:
   - repository: MyRepo
     type: github
     name: ionellu/Sdl-Community
-    endpoint: https://dev.azure.com/{sdl}/{Itdevops}/
+    
     
 trigger:
   branches:
     include:
-      - master
+      - MyRepo.master
   paths:
     include:
       - Sdl-Community/AdvancedDisplayFilter/*
