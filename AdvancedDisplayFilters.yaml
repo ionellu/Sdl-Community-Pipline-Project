@@ -13,7 +13,7 @@ resources:
     trigger:
       branches:
        include:
-         - MyRepo.master
+         - master
       paths:
        include:
         - Sdl-Community/AdvancedDisplayFilter/*
