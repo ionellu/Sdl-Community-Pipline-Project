@@ -16,7 +16,7 @@ trigger:
       - MyRepo.master
   paths:
     include:
-      - ionellu/Sdl-Community/AdvancedDisplayFilter/*
+      - Sdl-Community/AdvancedDisplayFilter/*
 
 pool: mypool
 
