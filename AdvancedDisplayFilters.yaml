@@ -10,13 +10,13 @@ resources:
     type: github  # see the following "Type" topic
     name: ionellu/Sdl-Community  # repository name (format depends on `type`)
     endpoint: ionellu  # name of the service connection to use (for types that aren't Azure Repos)
-trigger:
-  branches:
-    include:
-      - MyRepo.master
-  paths:
-    include:
-      - Sdl-Community/AdvancedDisplayFilter/*
+    trigger:
+      branches:
+       include:
+         - MyRepo.master
+      paths:
+       include:
+        - Sdl-Community/AdvancedDisplayFilter/*
 
 pool: mypool
 
