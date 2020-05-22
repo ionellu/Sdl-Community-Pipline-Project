@@ -1,5 +1,5 @@
 steps:
-- checkout: github.com/ionellu/Sdl-Community
+- checkout: ionellu
 - task: NuGetToolInstaller@1
   displayName: 'Use NuGet 4.5.3'
   inputs:
