@@ -8,7 +8,7 @@ resources:
   - repository: MyRepo
     type: github
     name: ionellu/Sdl-Community
-    endpoint: 
+    endpoint: ionellu
     
     
 trigger:
