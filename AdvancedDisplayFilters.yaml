@@ -8,13 +8,12 @@ resources:
   repositories:
   - repository: MyRepo  # identifier (A-Z, a-z, 0-9, and underscore)
     type: github  # see the following "Type" topic
-    name: ionellu  # repository name (format depends on `type`)
-    ref: ionellu/Sdl-Community/ # ref name to use; defaults to 'refs/heads/master'
+    name: ionellu/Sdl-Community  # repository name (format depends on `type`)
     endpoint: ionellu  # name of the service connection to use (for types that aren't Azure Repos)
 trigger:
   branches:
     include:
-      - ionellu/Sdl-Community.master
+      - MyRepo.master
   paths:
     include:
       - Sdl-Community/AdvancedDisplayFilter/*
