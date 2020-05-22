@@ -8,7 +8,7 @@
 trigger:
   branches:
     include:
-      - Sdl-Community.master
+      - ionellu/Sdl-Community.master
   paths:
     include:
       - Sdl-Community/AdvancedDisplayFilter/*
@@ -21,5 +21,5 @@ variables:
   solution : '**/Sdl.Community.AdvancedDisplayFilter.sln'
   
 steps:
-  - checkout: https://github.com/ionellu/Sdl-Community
+  - checkout: ionellu/Sdl-Community
   - template: include-buid-steps.yml  # Template reference
