@@ -3,18 +3,12 @@
 # Add steps that publish symbols, save build artifacts, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
 
-resources:
-  repositories:
-  - repository: MyRepo
-    type: github
-    name: ionellu/Sdl-Community
-    endpoint: ionellu
-    
+
     
 trigger:
   branches:
     include:
-      - MyRepo.master
+      - Sdl-Community.master
   paths:
     include:
       - Sdl-Community/AdvancedDisplayFilter/*
