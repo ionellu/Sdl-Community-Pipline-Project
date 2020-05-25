@@ -16,3 +16,5 @@ steps:
     platform: '$(BuildPlatform)'
     configuration: '$(BuildConfiguration)'
     maximumCpuCount: true
+ 
+ - task: PublishPipelineMetadata@0 
