@@ -6,10 +6,10 @@
 
 resources:
   repositories:
-  - repository: MyRepo  # identifier (A-Z, a-z, 0-9, and underscore)
-    type: github  # see the following "Type" topic
-    name: ionellu/Sdl-Community  # repository name (format depends on `type`)
-    endpoint: ionellu  # name of the service connection to use (for types that aren't Azure Repos)
+  - repository: MyRepo  
+    type: github  
+    name: ionellu/Sdl-Community  
+    endpoint: ionellu  
     trigger:
       branches:
        include:
