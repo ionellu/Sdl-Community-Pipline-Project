@@ -27,4 +27,3 @@ variables:
 steps:
   - checkout: MyRepo
   - template: include-buid-steps.yml
-  - task: PublishPipelineMetadata@0
