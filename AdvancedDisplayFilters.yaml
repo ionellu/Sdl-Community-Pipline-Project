@@ -17,8 +17,7 @@ resources:
        include:
         - Sdl-Community/AdvancedDisplayFilter/*
 
-pool: 
-   vmImage: windows-latest
+pool: StudioCluj
 
 variables:
   buildPlatform: 'Any CPU'
